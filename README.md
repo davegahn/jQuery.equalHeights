@@ -1,7 +1,7 @@
 # jQuery Equal Heights per row
 Version 1.0.0
 
-## Author
+## Authors
 
 iBird Rose ([vk.com](https://vk.com/iiibird)) & KFan ([vk.com](https://vk.com/gildarb))
 
