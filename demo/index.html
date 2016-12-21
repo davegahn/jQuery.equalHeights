@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Equal Heights example</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/color-brewer.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/media.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="container">
+		
+		<a class="github-link" href="https://github.com/iiiBird/jQuery.equalHeights"><i class="icon-github"></i> GitHub</a>
+		<h1>jQuery Equal Heights per row</h1>
+
+		<div class="example-tabs">
+
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#example-1" aria-controls="example-1" role="tab" data-toggle="tab">Basic usage</a></li>
+				<li role="presentation"><a href="#example-2" aria-controls="example-2" role="tab" data-toggle="tab">Parent and inner Item</a></li>
+				<li role="presentation"><a href="#example-3" aria-controls="example-3" role="tab" data-toggle="tab">Per row option</a></li>
+				<li role="presentation"><a href="#example-4" aria-controls="example-4" role="tab" data-toggle="tab">Auto Initialize</a></li>
+				<li role="presentation"><a href="#example-5" aria-controls="example-5" role="tab" data-toggle="tab">With images</a></li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="example-1">
+					<h2>Equal Heights - Basic usage</h2>
+<div class="code-title">HTML</div>
+					<pre><code class="html">
+&lt;div class="example"&gt;
+  &lt;div class="example-item"&gt; ... &lt;/div&gt;
+  &lt;div class="example-item"&gt; ... &lt;/div&gt;
+  &lt;div class="example-item"&gt; ... &lt;/div&gt;
+  &lt;div class="example-item"&gt; ... &lt;/div&gt;
+  &lt;div class="example-item"&gt; ... &lt;/div&gt;
+  &lt;div class="example-item"&gt; ... &lt;/div&gt;
+&lt;/div&gt;
+					</code></pre>
+<div class="code-title">JavaScript</div>
+					<pre><code class="javascript">
+$(".example-item").equalHeights();
+					</code></pre>
+					<div class="footnote">
+						Equal Heights per row
+					</div>
+					<div class="example">
+						<div class="example-item">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident maiores, impedit voluptatibus voluptatem numquam, ad suscipit reprehenderit eligendi officiis quidem voluptatum illo ipsum tempora eveniet asperiores natus, vitae debitis aspernatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium voluptates, labore neque necessitatibus harum possimus, eveniet deleniti adipisci cum ipsa, ut error! Eum voluptatibus culpa consequatur praesentium reprehenderit voluptas eos!
+							</div>
+						</div>
+						<div class="example-item">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore molestiae voluptatibus rem, rerum vero placeat ratione explicabo esse sint nulla odit iste tempora magni distinctio, voluptate ipsum quasi ducimus aut? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis distinctio laborum, tempore rem officia cupiditate modi, velit, explicabo cumque voluptatem quod vel. Labore hic obcaecati!
+							</div>
+						</div>
+						<div class="example-item">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quos repudiandae possimus voluptates, deserunt laudantium amet est et quisquam perspiciatis, at eius exercitationem minima ab ducimus vero sapiente, sequi odio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, quo! Dicta doloribus, aperiam deserunt labore, fuga, blanditiis placeat delectus fugiat reprehenderit magni et. Sint, ex assumenda non impedit veritatis. Aspernatur!
+							</div>
+						</div>
+						<div class="example-item">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque error est magni totam, enim perferendis sint delectus ipsam blanditiis adipisci consequatur nesciunt dolorum eos, molestiae id cum. Explicabo, maxime, ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, totam, illo id obcaecati unde suscipit sit, harum labore, blanditiis quasi beatae. Suscipit impedit dolore praesentium harum natus mollitia, eligendi, dolorum.
+							</div>
+						</div>
+						<div class="example-item">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque error est magni totam, enim perferendis sint delectus ipsam blanditiis adipisci consequatur nesciunt dolorum eos, molestiae id cum. Explicabo, maxime, ab.
+							</div>
+						</div>
+						<div class="example-item">
+							<h3>Lorem</h3>
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque error est magni totam, enim perferendis sint delectus ipsam blanditiis adipisci consequatur nesciunt dolorum eos, molestiae id cum. Explicabo, maxime, ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, totam, illo id obcaecati unde suscipit sit, harum labore.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="example-2">
+					<h2>Equal Heights - Parent and inner item options</h2>
+<div class="code-title">HTML</div>
+					<pre><code class="html">
+&lt;div class="example-2"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-sm-6 col-md-6"&gt;
+      &lt;div class="example-item-2"&gt; ... &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-sm-6 col-md-3"&gt;
+      &lt;div class="example-item-2"&gt; ... &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-sm-6 col-md-3"&gt;
+      &lt;div class="example-item-2"&gt; ... &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-sm-6 col-md-3"&gt;
+      &lt;div class="example-item-2"&gt; ... &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code></pre>
+<div class="code-title">JavaScript</div>
+					<pre><code class="javascript">
+$(".example-item-2").equalHeights({
+  innerItem: ".example-item__content",
+  parent: $(".example-2")
+});
+					</code></pre>
+					<div class="footnote">
+						P.S. You can use this script when the items have different widths.
+					</div>
+					<div class="example-2">
+						<div class="row">
+							<div class="col-sm-6 col-md-6">
+								<div class="example-item-2">
+									<h3>Lorem</h3>
+									<div class="example-item__content">
+										<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique cumque vel aliquid quo adipisci, animi, dolorum aliquam sapiente nisi unde! Alias corporis velit hic quisquam sed, repellat reiciendis magnam labore.</div>
+										<div>Aspernatur, perferendis optio fugiat nulla sed facere ut maxime corrupti fuga unde laboriosam iste quod! Perferendis veniam, ea ratione accusantium aut cupiditate quisquam fugiat ad id. Ipsam sit pariatur mollitia!</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="example-item-2">
+									<h3>Lorem</h3>
+									<div class="example-item__content">
+										<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia odit maxime blanditiis tenetur voluptas necessitatibus cumque ducimus dolorum itaque ratione corrupti iusto saepe, repellat nesciunt nemo, dolore, placeat fugit impedit!</div>
+										<div>Optio quasi nesciunt animi id velit molestiae voluptate quas ad pariatur odio amet fugit, obcaecati dignissimos odit. Fuga pariatur praesentium, fugiat voluptatum autem nihil, voluptatibus, quos soluta, illum non minima.</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="example-item-2">
+									<h3>Lorem</h3>
+									<div class="example-item__content">
+										<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi amet numquam fugit voluptatibus, provident, fuga at ratione minima rem commodi corporis ea, quibusdam blanditiis libero voluptate. Tempora maxime, doloribus culpa.</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="example-item-2">
+									<h3>Lorem</h3>
+									<div class="example-item__content">
+										<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sunt, itaque deleniti incidunt labore inventore, nemo atque eius ex sapiente, vero aspernatur maxime eum sit recusandae debitis dolore ullam voluptatum?</div>
+										Amet at excepturi, illum a, sit aliquam. Eaque corporis illo omnis.
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="example-item-2">
+									<h3>Lorem</h3>
+									<div class="example-item__content">
+										<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia odit maxime blanditiis tenetur voluptas necessitatibus cumque ducimus dolorum itaque ratione corrupti iusto saepe, repellat nesciunt nemo, dolore, placeat fugit impedit!</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="example-item-2">
+									<h3>Lorem</h3>
+									<div class="example-item__content">
+										<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi amet numquam fugit voluptatibus, provident, fuga at ratione minima rem commodi corporis ea, quibusdam blanditiis libero voluptate. Tempora maxime, doloribus culpa.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="example-3">
+					<h2>Equal Heights - Disable per row option</h2>
+<div class="code-title">HTML</div>
+					<pre><code class="html">
+&lt;div class="example-3"&gt;
+  &lt;div class="example-item-3"&gt; ... &lt;/div&gt;
+  &lt;div class="example-item-3"&gt; ... &lt;/div&gt;
+  &lt;div class="example-item-3"&gt; ... &lt;/div&gt;
+  &lt;div class="example-item-3"&gt; ... &lt;/div&gt;
+  &lt;div class="example-item-3"&gt; ... &lt;/div&gt;
+  &lt;div class="example-item-3"&gt; ... &lt;/div&gt;
+&lt;/div&gt;
+					</code></pre>
+<div class="code-title">JavaScript</div>
+					<pre><code class="javascript">
+$(".example-item-3").equalHeights({
+  perRow: false
+});
+					</code></pre>
+					<div class="footnote">
+						All items have equal height
+					</div>
+					<div class="example-3">
+						<div class="example-item-3">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							</div>
+						</div>
+						<div class="example-item-3">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore molestiae voluptatibus rem, rerum vero placeat ratione explicabo esse sint nulla odit iste tempora magni distinctio, voluptate ipsum quasi ducimus aut? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis distinctio laborum, tempore rem officia cupiditate modi, velit, explicabo cumque voluptatem quod vel. Labore hic obcaecati!
+							</div>
+						</div>
+						<div class="example-item-3">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quos repudiandae possimus voluptates, deserunt laudantium amet est et quisquam perspiciatis, at eius exercitationem minima ab ducimus vero sapiente, sequi odio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, quo! Dicta doloribus, aperiam deserunt labore, fuga, blanditiis placeat delectus fugiat reprehenderit magni et. Sint, ex assumenda non impedit veritatis. Aspernatur!
+							</div>
+						</div>
+						<div class="example-item-3">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque error est magni totam, enim perferendis sint delectus ipsam blanditiis adipisci consequatur nesciunt dolorum eos, molestiae id cum. Explicabo, maxime, ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, totam, illo id obcaecati unde suscipit sit, harum labore, blanditiis quasi beatae. Suscipit impedit dolore praesentium harum natus mollitia, eligendi, dolorum.
+							</div>
+						</div>
+						<div class="example-item-3">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque error est magni totam, enim perferendis sint delectus ipsam blanditiis adipisci consequatur nesciunt dolorum eos, molestiae id cum. Explicabo, maxime, ab.
+							</div>
+						</div>
+						<div class="example-item-3">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque error est magni totam, enim perferendis sint delectus ipsam blanditiis adipisci consequatur nesciunt dolorum eos, molestiae id cum. Explicabo, maxime, ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, totam, illo id obcaecati unde suscipit sit, harum labore.
+							</div>
+						</div>
+						<div class="example-item-3">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque error est magni totam, enim perferendis sint delectus ipsam blanditiis adipisci consequatur nesciunt dolorum eos, molestiae id cum. Explicabo, maxime, ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, totam, illo id obcaecati unde suscipit sit, harum labore, blanditiis quasi beatae. Suscipit impedit dolore praesentium harum natus mollitia, eligendi, dolorum.
+							</div>
+						</div>
+						<div class="example-item-3">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque error est magni totam, enim perferendis sint delectus ipsam blanditiis adipisci consequatur nesciunt dolorum eos, molestiae id cum. Explicabo, maxime, ab.
+							</div>
+						</div>
+						<div class="example-item-3">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque error est magni totam, enim perferendis sint delectus ipsam blanditiis adipisci consequatur nesciunt dolorum eos, molestiae id cum. Explicabo, maxime, ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, totam, illo id obcaecati unde suscipit sit, harum labore.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="example-4">
+					<h2>Equal Heights - Auto Initialize</h2>
+<div class="code-title">HTML</div>
+					<pre><code class="html">
+&lt;div class="example-4" data-equalheights=".example-item-4"&gt;
+  &lt;div class="example-item-4"&gt; ... &lt;/div&gt;
+  &lt;div class="example-item-4"&gt; ... &lt;/div&gt;
+  &lt;div class="example-item-4"&gt; ... &lt;/div&gt;
+  &lt;div class="example-item-4"&gt; ... &lt;/div&gt;
+  &lt;div class="example-item-4"&gt; ... &lt;/div&gt;
+  &lt;div class="example-item-4"&gt; ... &lt;/div&gt;
+&lt;/div&gt;
+					</code></pre>
+
+					<div class="example-4" data-equalheights=".example-item-4">
+						<div class="example-item-4">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident maiores, impedit voluptatibus voluptatem numquam, ad suscipit reprehenderit eligendi officiis quidem voluptatum illo ipsum tempora eveniet asperiores natus, vitae debitis aspernatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium voluptates, labore neque necessitatibus harum possimus, eveniet deleniti adipisci cum ipsa, ut error! Eum voluptatibus culpa consequatur praesentium reprehenderit voluptas eos!
+							</div>
+						</div>
+						<div class="example-item-4">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore molestiae voluptatibus rem, rerum vero placeat ratione explicabo esse sint nulla odit iste tempora magni distinctio, voluptate ipsum quasi ducimus aut? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis distinctio laborum, tempore rem officia cupiditate modi, velit, explicabo cumque voluptatem quod vel. Labore hic obcaecati!
+							</div>
+						</div>
+						<div class="example-item-4">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quos repudiandae possimus voluptates, deserunt laudantium amet est et quisquam perspiciatis, at eius exercitationem minima ab ducimus vero sapiente, sequi odio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, quo! Dicta doloribus, aperiam deserunt labore, fuga, blanditiis placeat delectus fugiat reprehenderit magni et. Sint, ex assumenda non impedit veritatis. Aspernatur!
+							</div>
+						</div>
+						<div class="example-item-4">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque error est magni totam, enim perferendis sint delectus ipsam blanditiis adipisci consequatur nesciunt dolorum eos, molestiae id cum. Explicabo, maxime, ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, totam, illo id obcaecati unde suscipit sit, harum labore, blanditiis quasi beatae. Suscipit impedit dolore praesentium harum natus mollitia, eligendi, dolorum.
+							</div>
+						</div>
+						<div class="example-item-4">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque error est magni totam, enim perferendis sint delectus ipsam blanditiis adipisci consequatur nesciunt dolorum eos, molestiae id cum. Explicabo, maxime, ab.
+							</div>
+						</div>
+						<div class="example-item-4">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque error est magni totam, enim perferendis sint delectus ipsam blanditiis adipisci consequatur nesciunt dolorum eos, molestiae id cum. Explicabo, maxime, ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, totam, illo id obcaecati unde suscipit sit, harum labore.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="example-5">
+					<h2>Equal Heights - Items with images</h2>
+<div class="code-title">HTML</div>
+					<pre><code class="html">
+&lt;div class="example-5"&gt;
+  &lt;div class="example-item-5"&gt; ... &lt;/div&gt;
+  &lt;div class="example-item-5"&gt; ... &lt;/div&gt;
+  &lt;div class="example-item-5"&gt; ... &lt;/div&gt;
+  &lt;div class="example-item-5"&gt; ... &lt;/div&gt;
+  &lt;div class="example-item-5"&gt; ... &lt;/div&gt;
+  &lt;div class="example-item-5"&gt; ... &lt;/div&gt;
+&lt;/div&gt;
+					</code></pre>
+<div class="code-title">JavaScript</div>
+					<pre><code class="javascript">
+$(".example-item-5").equalHeights().find("img, iframe, object").load(function(){
+  $(".example-item-5").equalHeights();
+});
+					</code></pre>
+					<div class="footnote">
+						P.S. or use fixed height for image wrapper.
+					</div>
+					<div class="example-5">
+						<div class="example-item-5">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<img src="https://pp.vk.me/c636129/v636129953/3ddd6/0W_ZLWapPas.jpg" alt="">
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident maiores, impedit voluptatibus voluptatem numquam, ad suscipit reprehenderit eligendi officiis quidem voluptatum illo ipsum tempora eveniet asperiores natus, vitae debitis aspernatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium voluptates, labore neque necessitatibus harum possimus, eveniet deleniti adipisci cum ipsa, ut error! Eum voluptatibus culpa consequatur praesentium reprehenderit voluptas eos!
+							</div>
+						</div>
+						<div class="example-item-5">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<img src="https://pp.vk.me/c636129/v636129411/4a641/AYUVTnxdsmI.jpg" alt="">
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore molestiae voluptatibus rem, rerum vero placeat ratione explicabo esse sint nulla odit iste tempora magni distinctio, voluptate ipsum quasi ducimus aut? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis distinctio laborum, tempore rem officia cupiditate modi, velit, explicabo cumque voluptatem quod vel. Labore hic obcaecati!
+							</div>
+						</div>
+						<div class="example-item-5">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<img src="https://pp.vk.me/c636129/v636129603/3aebd/fqJmgUEBA7U.jpg" alt="">
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quos repudiandae possimus voluptates, deserunt laudantium amet est et quisquam perspiciatis, at eius exercitationem minima ab ducimus vero sapiente, sequi odio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, quo! Dicta doloribus, aperiam deserunt labore, fuga, blanditiis placeat delectus fugiat reprehenderit magni et. Sint, ex assumenda non impedit veritatis. Aspernatur!
+							</div>
+						</div>
+						<div class="example-item-5">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<img src="https://pp.vk.me/c636129/v636129381/39993/LWuB4BkXNUY.jpg" alt="">
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque error est magni totam, enim perferendis sint delectus ipsam blanditiis adipisci consequatur nesciunt dolorum eos, molestiae id cum. Explicabo, maxime, ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, totam, illo id obcaecati unde suscipit sit, harum labore, blanditiis quasi beatae. Suscipit impedit dolore praesentium harum natus mollitia, eligendi, dolorum.
+							</div>
+						</div>
+						<div class="example-item-5">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<img src="https://pp.vk.me/c636129/v636129019/40470/-7HhtTVjiZY.jpg" alt="">
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque error est magni totam, enim perferendis sint delectus ipsam blanditiis adipisci consequatur nesciunt dolorum eos, molestiae id cum. Explicabo, maxime, ab.
+							</div>
+						</div>
+						<div class="example-item-5">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<img src="https://pp.vk.me/c636129/v636129693/3c2eb/UBX4qBVX8Kw.jpg" alt="">
+							<div class="example-item__content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque error est magni totam, enim perferendis sint delectus ipsam blanditiis adipisci consequatur nesciunt dolorum eos, molestiae id cum. Explicabo, maxime, ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, totam, illo id obcaecati unde suscipit sit, harum labore.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/highlight.pack.js"></script>
+	<script src="../jquery.equalheights.js"></script>
+	<script src="js/main.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+	<script>
+		/*example-1*/
+		$(".example-item").equalHeights();
+
+		$(window).resize(function(){
+			$(".example-item").equalHeights();
+		});
+
+		$('a[href="#example-1"]').on('shown.bs.tab', function () {
+			$(".example-item").equalHeights();
+
+			$(window).resize(function(){
+				$(".example-item").equalHeights();
+			});
+		});
+		/*end example-1*/
+
+		/*example-2*/
+		$('a[href="#example-2"]').on('shown.bs.tab', function () {
+			$(".example-item-2").equalHeights({
+				innerItem: ".example-item__content",
+				parent: $(".example-2")
+			});
+
+			$(window).resize(function(){
+				$(".example-item-2").equalHeights({
+					innerItem: ".example-item__content",
+					parent: $(".example-2")
+				});
+			});
+		});
+		/*end example-2*/
+
+		/*example-3*/
+		$('a[href="#example-3"]').on('shown.bs.tab', function () {
+			$(".example-item-3").equalHeights({
+				perRow: false
+			});
+
+			$(window).resize(function(){
+				$(".example-item-3").equalHeights({
+					perRow: false
+				});
+			});
+		});
+		/*end example-3*/
+
+		/*example-4*/
+		$('a[href="#example-4"]').on('shown.bs.tab', function () {
+			$("[data-equalheights]").each(function () {
+				var key = $(this).attr("data-equalheights");
+				var items = $(this).find(key);
+
+				$(items).equalHeights();
+				$(window).resize(function () {
+					$(items).equalHeights();
+				});
+			});
+		});
+		/*end example-4*/
+
+		/*example-5*/
+		$('a[href="#example-5"]').on('shown.bs.tab', function () {
+			// $(".example-item-5").equalHeights();
+
+			// $(window).load(function(){
+			// 	$(".example-item-5").equalHeights();
+			// });
+
+			$(window).resize(function(){
+				$(".example-item-5").equalHeights();
+			});
+
+			$(".example-item-5").equalHeights().find("img, iframe, object").load(function(){
+			  $(".example-item-5").equalHeights();
+			});
+		});
+		/*example-5*/
+	</script>
+</body>
+</html>

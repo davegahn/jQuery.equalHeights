@@ -1,0 +1,11 @@
+@media (max-width: 1199px) and (min-width: 992px) {
+	.example-item, .example-item-3, .example-item-4 {width: 33.3333%;}
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.example-item, .example-item-3, .example-item-4 {width: 50%;}
+}
+
+@media (max-width: 767px) and (min-width: 0px) {
+	.example-item, .example-item-3, .example-item-4 {width: 100%;}
+}
