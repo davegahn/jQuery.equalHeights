@@ -11,8 +11,8 @@ iBird Rose ([vk.com](https://vk.com/iiibird)) & KFan ([vk.com](https://vk.com/gi
 ## Usage
 ...
 
-## Demo
-[See a Demo](https://iiibird.github.io/jQuery.equalHeights/demo/)
+## Demo and Examples
+[Examples](https://iiibird.github.io/jQuery.equalHeights/demo/)
 
 ## Changelog
 
