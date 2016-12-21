@@ -3,7 +3,7 @@ Version 1.0.0
 
 ## Author
 
-iBird Rose ([vk.com](https://vk.com/iiibird)) & KFan ()
+iBird Rose ([vk.com](https://vk.com/iiibird)) & KFan ([vk.com](https://vk.com/gildarb))
 
 ## Manual Download - Stable Release
 [Download](https://github.com/iiiBird/jQuery.equalHeights/releases)
