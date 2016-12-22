@@ -1,5 +1,6 @@
 # jQuery Equal Heights by row
 Version 1.0.0
+
 This plugin makes the height of all selected elements exactly equal.
 
 ## Authors
