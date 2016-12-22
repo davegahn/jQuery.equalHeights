@@ -36,7 +36,7 @@ The default options are:
 Where:
 * innerItem - Inner element that you want to set the height. type - string. (Example: innerItem: ".item_content",)
 * parent - Parent element if a direct parent is not needed element. type - object (Example: parent: $(".parent"),)
-* perRow - true or false to enable row detection.
+* byRow - true or false to enable row detection.
 
 ## Demo and Examples
 [Examples](https://iiibird.github.io/jQuery.equalHeights/demo/)
