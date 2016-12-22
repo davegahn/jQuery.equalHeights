@@ -1,5 +1,5 @@
 /**
-* jQuery Simple Equal Heights by row
+* jQuery Equal Heights by row
 * 
 * Copyright (c) 2016 iBird Rose & KFan
 * Dual licensed under the MIT and GPL licenses.
