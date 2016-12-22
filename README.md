@@ -29,7 +29,7 @@ The default options are:
 {
   innerItem: false,
   parent: $(this).parent(),
-  perRow: true
+  byRow: true
 }
 
 ```
