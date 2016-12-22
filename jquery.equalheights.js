@@ -1,5 +1,5 @@
 /**
-* jQuery Simple Equal Heights per row
+* jQuery Simple Equal Heights by row
 * 
 * Copyright (c) 2016 iBird Rose & KFan
 * Dual licensed under the MIT and GPL licenses.
@@ -14,7 +14,7 @@
 		options = $.extend({
 			innerItem: false,
 			parent: $(this).parent(),
-			perRow: true
+			byRow: true
 		}, options);
 		
 		this.setItemsWithInner = (function (items, height, inner, parent) {
@@ -66,7 +66,7 @@
 				
 				var itemHeight = $(this).height();
 
-				if (itemWidth + itemsWidth > $(selfParent).width() && items.length > 0 && options.perRow) {
+				if (itemWidth + itemsWidth > $(selfParent).width() && items.length > 0 && options.byRow) {
 					self.setItemsWithInner(items, maxHeight, options.innerItem, selfParent);
 
 					items = [this];
